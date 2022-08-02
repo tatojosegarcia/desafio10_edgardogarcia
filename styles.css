@@ -1,0 +1,738 @@
+/* Sobrescribe el estilo por defecto y establece el padding y el margen a cero 000*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+  }
+  
+  /* Texto color blanco en todas partes 00000 */
+  
+  body {
+    font-family: "lato", sans-serif;
+    color: white;
+  }
+  
+  /* Hacer todo el texto de los links negro y sin decoración 0000000*/
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .links{
+text-align: center;
+
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+  }
+
+.intro{
+
+animation-duration: 7s;
+animation-duration: surgir;
+animation-name: surgir;
+
+
+}
+
+@keyframes surgir{
+
+0%{ opacity: 0; }
+100%{opacity: 100;}
+
+}
+
+
+
+
+
+
+  .logo{
+font-family: fantasy;
+font-weight: 50;
+
+
+  }
+
+  .subtit{
+text-align: center;
+color: #6a0c53;
+width: 100%;
+
+
+
+  }
+
+
+  
+  
+  h2 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 10px 0;
+    padding-bottom: 50px;
+    line-height: 5;
+    color: #6a0c53;
+   font-weight: bold;
+   text-align: center;
+  }
+  
+  p {
+    font-size: 30px;
+  }
+  
+  /* Todas las imágenes deben ser del mismo tamañño que su contenedor*/
+  img {
+    width: 100%;
+  }
+
+  .kcups_gif{
+width: 65%;
+border-radius: 20%;
+
+  }
+
+  .cakegif{
+
+    width: 65%;
+    height: 300px;
+border-radius: 20%
+
+
+  }
+
+  .icon_ico{
+
+width: 15%;
+margin: 20px;
+transition: 1s;
+
+  }
+
+  .icon_ico:hover{
+
+    transform: rotatey(180deg);
+    
+      }
+
+      .icon_ico2{
+
+        border-radius: 4%;
+
+
+      }
+
+
+  
+  /* Remover el estilo a los elementos de una lista */
+  li {
+    list-style-type: none;
+  }
+  
+  
+  
+  p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  /* Centra el elemento y establece un ancho máximo y se asegura que los elementos puedan fluir através*/
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: visible;
+ 
+}
+
+/* Aplica el color de fondo, altura y "padding"*/
+
+.navbar {
+  background-color: purple;
+  height: 70px;
+  padding: 0 30px;
+
+}
+
+
+
+/* Establece el tamaño de la fuente (font size), reduce el peso de loa fuente (font-weight), agrega margen y alto de línea (line height) */
+
+.navbar h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.2;
+  transform: rotate(-10deg);
+ 
+}
+
+
+
+/* mostrar ambos elementos hijos dentro del contenedor h1 y nav una al lado del otro usando Flexbox */
+
+.navbar .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* no se aplien los elementos un sobre otro FLEXBOX */
+
+.navbar ul {
+  display: flex;
+  
+}
+
+
+
+/* Cambia el color de ambos enlaces a blanco, agrega padding entre si y margen también */
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  padding: 9px;
+  margin: 0 10px;
+  
+}
+
+
+
+.titulo-testimonial{
+text-align: center;
+color: #6a0c53;
+margin: 90px;
+padding: 0px;
+
+}
+
+
+/* CAMBIO DE COLOR CUANDO PASA RATON */
+
+.navbar a:hover {
+  color: #ffffff;
+  border-radius: 5px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation-name: navegacion;
+  animation-duration: 0.3s;
+  background-color: rgb(101, 0, 101);
+   
+}
+
+@keyframes navegacion{
+
+  0%{background-color: rgb(241, 187, 241);}
+  10%{background-color:rgb(227, 163, 227);}
+  20%{background-color:rgb(203, 136, 203);}
+  30%{background-color:rgb(176, 109, 176);}
+  40%{background-color:rgb(160, 88, 160);}
+  50%{background-color:rgb(143, 67, 143);}
+  60%{background-color:rgb(136, 50, 136);}
+  70%{background-color:rgb(129, 37, 129);}
+  80%{background-color:rgb(125, 25, 125);}
+  90%{background-color:rgb(128, 13, 128);}
+  100%{background-color: purple;}
+}
+
+/*  aplicar estilos CSS a nuestro área de presentación
+Primero, definimos la altura de la sección de área de presentacion así como también el 
+color de fondo:   */
+
+.showcase {
+  height: 300px;
+  background-color: purple;
+}
+
+/* APLICAMOS LOS SGTES ESTILOS */
+
+/* Añade margen bajo el texto */
+.showcase p {
+  margin-bottom: 30px;
+}
+
+/* Añade una sombra bajo la imágen */
+.showcase img {
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Añade algo de padding al contenido del formulario */
+.showcase-form {
+  padding-left: 7px;
+}
+
+/* Esto nos trae al tema principal. Si recuerdas, 
+dije que crearíamos dos secciones (retículas) dentro 
+del contenedor del área de presentación. Con la clase 
+"grid" (retícula) aplicada al contenedor vamos a alinear 
+el contenido utilizando CSS grid display de la siguiente manera: */
+
+.grid {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+/* Enseguida necesitaremos definir algo de espacio entre el área de navegación 
+(navigation) y el área de presentación. */
+
+.grid-item-1,
+.grid-item-2 {
+  position: relative;
+  top: 50px;
+}
+
+/* Ahora necesitamos estilizar ambos elementos 
+"input" de nuestro formulario porque aún no tienen 
+una buena apariencia. Seleccionamos el primer <input /> 
+por su tipo (email) y el segundo usando la clase CSS btn.  */
+
+.showcase input[type='email'] {
+  padding: 10px 70px 10px 0;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 6px;
+}
+
+input:focus{
+
+  background-color: #c588e1;
+  transition: 5s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+
+}
+
+
+
+.btn {
+  border-radius: 6px;
+  padding: 12px 20px;
+  background: #9867C5;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover{
+  color: #6a0c53;
+  
+  background-color: #dc55ce;
+  border-radius: 5px;
+  font-style: italic;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+
+
+/* También debemos cambiar la fuente del texto: */
+
+.showcase-form {
+  margin: auto;
+}
+
+/* Change typeface and its size */
+.little-info {
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+
+}
+
+/*  Cómo aplicar estilos CSS a la sección de estadísticas.
+Primero necesitamos aplicar los siguientes estilos: */
+
+/* Centra el conetenedor, aplica un ancho máximo (FALTA(((  TEXT - ALIGN::CENTER*/
+.lower-container {
+  margin: 120px auto;
+  padding: 0;
+  max-width: 1400px;
+  
+}
+
+
+/* Apunta a todos los elementos h3 con clase CSS title */
+.title {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/* Apunta a todos los parrafos con la clase CSS text */
+.text {
+  color: black;
+  font-size: 19px;
+  width: 100%;
+  padding: 10px;
+  margin: 0, 20px;
+  text-align: justify;
+}
+
+/* Notarás que los íconos-fuente de Font Awesome no son visibles. Trabajaremos en eso muy pronto.
+
+Pero antes de eso, necesitaremos hacer algo importante. Sí tenemos la intención de que los 3 div  de la sección de estadísticas estén alineados de forma horizontal (lado a lado). Para lograr eso, usaremos una vez más CSS Flexbox: */
+
+
+/* Mostrar horizontalmente, poner un poco de espacio alrededor */
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Agregar algo de padding alrededor del contenedor. Alinear el texto al centro */
+.stats {
+  padding: 45px 50px;
+  text-align: center;
+}
+
+/* Aplicar margen y ancho */
+.stat {
+  margin: 0 30px;
+  text-align: center;
+  width: 800px;
+  background-image: linear-gradient(to right, rgb(171, 170, 170), rgb(186, 137, 186), rgb(239, 156, 221));
+  border-radius: 20px;
+ 
+}
+
+
+.image:hover{
+transition: 0.5s;
+transform: rotateZ(5deg)
+
+
+}
+
+.stats .fa {
+  color: purple;
+}
+
+/* Cómo aplicarle estilos CSS
+Primero establecemos el color del texto a negro para que sea visible: */
+
+.testimonial {
+  color: black;
+  padding: 40px;
+}
+
+/* Enseguida, damos a la imagen la altura 
+suficiente para ocupar todo el alto de su contenedor padre: */
+
+
+/* Envuelve la imagen dentro de una figura circular y define su altura para que tome todo el alto de su elemento padre */
+
+.testimonial img {
+  height: 100%;
+  clip-path: circle();
+}
+
+/* Alinea el texto al centro */
+
+.testimonial h3{
+text-align: center;
+}
+
+/* Si checas el diseño final en el gif, notarás que las tre
+ tarjetas testimoniales estarán alineadas lado a lado en la misma fila.
+
+Así que necesitaremos crear un div de tres columnas 
+equidistantes usando un arreglo CSS grid. */
+
+/* Crear un grid de tres columnas equidistantes. Definir un espaciado de 40px entre ellas */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+/* Crear una tarjeta en blanco con sombreado alrededor */
+.card {
+ transition: 1s;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+               7px  7px 20px rgba(0, 0, 0, 0.2);
+               filter: grayscale(90%);
+               
+               
+}
+
+.card:hover{
+
+transform: scale(1.2,1.2);
+filter: grayscale(0);
+
+}
+
+
+/* Finalmente, daremos estilo al div circular y lo colocaremos
+ relativo al borde superior de la tarjeta usando CSS: */
+
+ .circle {
+  background-color: transparent;
+  border:3px solid purple;
+  height:90px;
+  position: relative;
+  top: -30px;
+  left: 120px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:90px;
+}
+
+
+
+/* Como estilizar el pié de página (footer)
+Primero necesitamos asignar el color blanco para el fondo de 
+la sección del "footer" (así como 
+también para todos los links), de la siguiente forma: */
+
+/* Add padding around the footer as well */
+
+footer {
+  background-color: purple;
+  padding: 20px 10px;
+}
+
+/* Sets all link texts to white and puts margin to the left and right */
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+/* Si revisas el primer gif, notarás que cuándo le paso 
+
+el ratón por encima a cualquiera de los enlaces del "footer",
+ su color cambia a una tonalidad más clara de púrpura y el borde
+  se muestra debajo.
+
+Podemos lograr esto usando un selector :hover : */
+
+footer a:hover {
+  color: #9867C5;
+  border-bottom: 2px solid #9867C5;
+}
+
+/* Cómo definir "Media Queries" para hacer la página responsiva.
+Ahora es momento de hacer más responsiva nuestra "landing page". Cuándo se crea un sitio web es importante tener en mente que los usuarios verán el sitio desde distintos dispositivos. Por lo que es imperativo hacer responsivo el sitio para mejorar la experiencia de usuario en los múltiples formatos y tamaños de pantalla.
+
+En nuestro CSS definiremos los "media queries" para establecer los breakpoints para los distintos anchos de pantalla y los diferentes dispositivos y relacionarlo con un grupo de reglas CSS para cada tamaño de pantalla.
+
+Cómo diseñar para tablets y pantallas más pequeñas
+Primero, optimizaremos la distribución de nuestro sitio para usuarios que lo visualicen desde una tablet. En nuestro CSS definiremos la siguiente regla:  */
+
+/* Tablets y pantallas más pequeñas */
+
+
+@media(max-width: 369px) {
+  .grid,
+  .grid-3 {
+    grid-template-columns: 10px;
+    justify-content: center;
+  }
+
+/* Cambia las secciones de servicio de lado-a-lado para que cada una se posicione en una sóla linea. Centra el texto. */
+
+.stats .flex {
+  flex-direction: column;
+}
+.stats {
+  text-align: center;
+}
+.image {
+  width: 600px;
+  margin-left: 80px;
+}
+.stat {
+  width: 100%;
+  padding-right: 80px;
+}
+/* Mueve el círculo al centro de la tarjeta  */
+
+.circle {
+  background-color: transparent;
+  border:3px solid purple;
+  height:90px;
+  position: relative;
+  top: -30px;
+  left: 270px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:90px;
+}
+  /* Enseguida, aplicaremos los siguientes reglas de estilo: */
+
+  /* Alinear todo el texto al centro. Esto moverá todo el texto, incluyendo el formulario al centro.*/
+
+.showcase {
+  height: auto;
+  text-align: center;
+}
+
+}
+
+@media(max-width: 768px) {
+  .grid,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+/* Cambia las secciones de servicio de lado-a-lado para que cada una se posicione en una sóla linea. Centra el texto. */
+
+.stats .flex {
+  flex-direction: column;
+}
+.stats {
+  text-align: center;
+}
+.image {
+  width: 600px;
+  margin-left: 80px;
+}
+.stat {
+  width: 100%;
+  padding-right: 80px;
+}
+/* Mueve el círculo al centro de la tarjeta  */
+
+.circle {
+  background-color: transparent;
+  border:3px solid purple;
+  height:90px;
+  position: relative;
+  top: -30px;
+  left: 270px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:90px;
+}
+  /* Enseguida, aplicaremos los siguientes reglas de estilo: */
+
+  /* Alinear todo el texto al centro. Esto moverá todo el texto, incluyendo el formulario al centro.*/
+
+.showcase {
+  height: auto;
+  text-align: center;
+}
+
+}
+/* Esto restablece el ancho del contendor de la imagen y agrega margen a la izquierda 
+*/ 
+
+
+
+
+
+
+
+/* Asegura que cada sección en las estadísticas no exceda el ancho del elemento padre. */
+
+
+
+
+
+
+/* Cómo diseñar para dispositivos móviles
+Mucha gente podría visitar el sitio desde un dispositivo 
+móvil, que típicamente tienen las pantallas más pequeñas. Debido a esto, 
+crear una distribución para las pantallas móviles es muy importante.*/
+
+/* Dispositivos móviles */
+@media(max-width: 500px) {
+  .navbar {
+    height: 100px;
+  }
+
+  /* Primero incrementamos la altura de nuestra área de navegación.
+   Dado que será vista desde una pantalla más pequeña, queremos que
+   el area se muestre al usuario con más énfasis.
+
+Luego, definimos las siguientes reglas de estilo: */
+
+/* Cambia la alineación. El logo del título se queda en la parte superior, los enlaces de navegación ahora se muestran debajo*/
+
+.navbar .flex {
+  flex-direction: column;
+}
+
+
+/* Cuando pasamos encima el ratón, retienen el texto blanco y cambia el borde a negro */
+
+.navbar a:hover {
+  color: white;
+  border-bottom: 2px solid black;
+}
+
+
+/* Establecer el color púrpura para el fondo de los enlaces de navegación, redondear las esquinas de los bordes y darle algo de espaciado*/
+
+.navbar ul {
+  background: #9867C5;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+
+/* Alinear el texto al centro */
+
+.showcase {
+  height: auto;
+  text-align: center;
+}
+
+
+/* Reducir el tamaño de la fuente */
+
+.little-info {
+  font-size: 13px;
+}
+
+
+/* Reducir el ancho de la imágen */
+
+.image {
+  width: 350px;
+  margin-left: 70px;
+}
+
+.stat {
+  margin-bottom: 40px;
+}
+
+
+/* Mover el círculo una vez más */
+
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 150px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+}
